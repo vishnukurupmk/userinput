@@ -1,0 +1,17 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+
+```{r}
+library(ndjson)
+df1<-stream_in("/Users/sachinvarriar/userDataApril.json")
+```
+
+```{r}
+df2<-df1[2]
+df2<-na.omit(df2)
+```
+
